@@ -1,6 +1,6 @@
 package edu.mx.uttt.ciclos;
 
-public class Serie {
+public class Serie{
     // variable de instancia
     private int n;
 
@@ -47,6 +47,19 @@ public class Serie {
            i++;  
         }
         
+        return r;
+    }
+
+    public double calcularDoWhile(){
+        int i = 1;
+        double r = 0.0;
+        double constante = 1.0;
+
+        do{
+            r+=constante/i;
+            i++;
+        }while(i<=this.n);
+
         return r;
     }
 
